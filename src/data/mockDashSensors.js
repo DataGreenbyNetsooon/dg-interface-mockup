@@ -1,0 +1,42 @@
+export const mockSensors = [
+    {
+      id: 1,
+      type: "Temperature",
+      details: "Temperature is stable within optimal range.",
+      status: "Good",
+      trend: "up",
+      usage: 45,
+    },
+    {
+      id: 2,
+      type: "CPU Usage",
+      details: "CPU usage is high, consider load balancing.",
+      status: "Warning",
+      trend: "up",
+      usage: 85,
+    },
+    {
+      id: 3,
+      type: "Disk I/O",
+      details: "Disk I/O is performing optimally.",
+      status: "Good",
+      trend: "down",
+      usage: 30,
+    },
+    {
+      id: 4,
+      type: "Memory Usage",
+      details: "Memory usage approaching limits.",
+      status: "Critical",
+      trend: "up",
+      usage: 92,
+    },
+    {
+      id: 5,
+      type: "Network Traffic",
+      details: "Network traffic is stable.",
+      status: "Good",
+      trend: "down",
+      usage: 40,
+    },
+  ];
