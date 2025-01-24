@@ -1,7 +1,6 @@
-// filepath: /home/clementlores/Datagreen/DG-Interface/postcss.config.js
-export default {
+module.exports = {
   plugins: {
-    '@tailwindcss/postcss7-compat': {},
+    tailwindcss: {},
     autoprefixer: {},
   },
 };
