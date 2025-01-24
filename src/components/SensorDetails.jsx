@@ -88,7 +88,7 @@ const SensorDetails = () => {
     "Power Consumption": "Monitors energy usage over time.",
     "CPU Usage": "Analyzes processing load trends.",
     "Network Traffic": "Visualizes data flow across the network.",
-    "Disk I/O": "Shows disk performance for I/O operations.",
+    "Disk": "Shows disk performance for I/O operations.",
   };
 
   return (

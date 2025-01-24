@@ -1,6 +1,6 @@
 import React from "react";
 import News from "../data/mockNews";
-import { mockSensors } from "../data/mockDashSensors";
+import { mockDashSensors } from "../data/mockDashSensors";
 import { Link } from "react-router-dom";
 
 const Dashboard = () => {
@@ -15,24 +15,24 @@ const Dashboard = () => {
       {/* Analytics Widgets */}
       <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="bg-white shadow-md rounded-lg p-6 text-center">
-          <h4 className="text-2xl font-bold text-green-700">{mockSensors.length}</h4>
+          <h4 className="text-2xl font-bold text-green-700">{mockDashSensors.length}</h4>
           <p className="text-gray-600">Active Sensors</p>
         </div>
         <div className="bg-white shadow-md rounded-lg p-6 text-center">
-          <h4 className="text-2xl font-bold text-green-700">546</h4>
+          <h4 className="text-2xl font-bold text-green-700">25</h4>
           <p className="text-gray-600">Logs Processed Today</p>
         </div>
         <div className="bg-white shadow-md rounded-lg p-6 text-center">
-          <h4 className="text-2xl font-bold text-green-700">23</h4>
+          <h4 className="text-2xl font-bold text-green-700">2</h4>
           <p className="text-gray-600">Anomalies Detected</p>
         </div>
       </div>
 
       {/* Telemetry Trends Section */}
       <div className="mt-8">
-        <h3 className="text-2xl font-semibold text-green-700">Telemetry Trends</h3>
+        <h3 className="text-2xl font-semibold text-green-700">Overall situation</h3>
         <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {mockSensors.map((sensor) => {
+          {mockDashSensors.map((sensor) => {
             const trendIcon = sensor.trend === "up" ? "🔺" : "🔻";
             const trendColor = sensor.trend === "up" ? "text-red-500" : "text-green-500";
             const progressBarColor =
