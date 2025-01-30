@@ -72,14 +72,14 @@ This project is a React-based dashboard designed for monitoring sensor data, log
 
 ### Known issues
 
-- **Non-scalable as it is**: the whole data is loaded. For better scalability, need to load pack per pack, and have a functionality to allow loading everything (thinking about logs specifically).
+- **Non-scalable as it is**: the whole set of data is loaded at once on page load. For better scalability, need to load pack per pack, and have a functionality to allow loading everything (thinking about logs specifically).
 - **Export data**: function is funky, .csv formatting is not consistent - to be worked on.
 - **Anomalies -> Show details button**: is expanding every boxes.
 - **Responsiveness**: can be looked further in details but de-prioritized.
 
 ### Further ideas
 
-- **Side menu**: make it sticky, as in Trends menu, scrolling down hide the side menu completely. Maybe work on a function to hold the side bar in place (either position:fixed, or make it move accordingly to the scroll).
+- **Side menu**: make it sticky, as in Trends menu scrolling down hides the side menu completely. Maybe work on a function to hold the side bar in place (either position:fixed, or make it move accordingly to the scroll).
 - **Rework top-right menu**: make it more cohesive with the rest, avoid repetition between the top menu and the side menu.
 - **Notification system**: could be an e-mail notification system that you could apply/subscribe to: allow the system to send an email to a distro list when anomalies are detected.
 - **Chat-bot**: this is a system I will need a long time to work on as I have never done before, and chat bot vulnerabilities are vast and sensitive. But remains an interesting idea.
