@@ -19,19 +19,31 @@ The project uses mock data for sensors and news:
   - Quick stats: Active Sensors, Logs Processed Today, Anomalies Detected.
   - Visual indicators for sensor performance and status.
 
-- **Quick Actions**:
-  - Navigate to the "Sensors" and "Logs" sections.
+- **Side menu**:
+  - Navigate to the different sections.
 
 - **Telemetry Trends**:
   - Graphs showcasing mock telemetry data for different sensor types, such as temperature, humidity, CPU usage, etc.
   - Performance indicators: Alerts for high/low metrics.
-
-- **News Section**:
-  - Latest updates displayed using mock news data.
+ 
+---
 
 ## Setup Instructions
 
-### To be added.
+- Clone the repo
+```bash
+    git clone git@github.com:DataGreenbyNetsooon/dg-interface-mockup.git
+ ```
+- Install dependencies with npm
+```bash
+    npm install
+```
+- Run dev with node package manager
+```
+   npm run dev
+```
+- Ctrl+Click on the localhost link showing in the terminal
+---
 ## Dependencies
   - React: Frontend library.
   - React Router: For navigation between pages.
