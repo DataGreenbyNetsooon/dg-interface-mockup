@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaTachometerAlt, FaThermometerHalf, FaClipboardList } from "react-icons/fa";
+import { FaBars, FaTachometerAlt, FaThermometerHalf, FaClipboardList, FaChartLine, FaExclamationTriangle } from "react-icons/fa";
 
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -28,6 +28,18 @@ const Sidebar = () => {
           <Link to="/sensors" className="flex items-center hover:text-green-300 text-2xl">
             <FaThermometerHalf size={28} className="mr-2" />
             <span className={`${isCollapsed ? 'hidden' : 'block'}`}>Sensors</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/trends" className="flex items-center hover:text-green-300 text-2xl">
+            <FaChartLine size={28} className="mr-2" />
+            <span className={`${isCollapsed ? 'hidden' : 'block'}`}>Trends</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/anomalies" className="flex items-center hover:text-green-300 text-2xl">
+            <FaExclamationTriangle size={28} className="mr-2" />
+            <span className={`${isCollapsed ? 'hidden' : 'block'}`}>Anomalies</span>
           </Link>
         </li>
         <li>

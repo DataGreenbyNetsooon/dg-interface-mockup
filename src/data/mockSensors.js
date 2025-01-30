@@ -7,7 +7,7 @@ const generateSensorData = () => {
       "Power Consumption",
       "CPU Usage",
       "Network Traffic",
-      "Disk I/O",
+      "Disk",
     ];
   
     const oneYearAgo = new Date(now.getFullYear() - 1, now.getMonth(), now.getDate());
@@ -43,7 +43,7 @@ const generateSensorData = () => {
       "Power Consumption",
       "CPU Usage",
       "Network Traffic",
-      "Disk I/O",
+      "Disk",
     ];
   
     const timestamp = now.toISOString();
