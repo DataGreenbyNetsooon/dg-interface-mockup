@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-4">
           <img src={logo} alt="DataGreen Logo" className="h-12 w-10" />
-          <h1 className="text-3xl font-bold">DataGreen Technology</h1>
+          <h1 className="text-3xl font-bold">DataGreen</h1>
         </div>
         <div className="space-x-8 text-2xl font-semibold">
           <a href="/" className="hover:text-green-300">Home</a>
