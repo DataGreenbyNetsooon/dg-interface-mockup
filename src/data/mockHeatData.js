@@ -1,3 +1,14 @@
+/**
+ * Generates mock heat data for the past year.
+ *
+ * @returns {Array<Object>} An array of objects representing daily heat data.
+ * Each object contains the following properties:
+ * - date {string}: The date in YYYY-MM-DD format.
+ * - temperature {string}: The temperature in °C, with one decimal place.
+ * - heatUsedForPower {string}: The amount of heat used for power, rounded to the nearest integer.
+ * - heatTransformedToAC {string}: The amount of heat transformed to AC, rounded to the nearest integer.
+ */
+
 const generateHeatData = () => {
     const now = new Date();
     const heatData = [];
@@ -12,9 +23,9 @@ const generateHeatData = () => {
   
       heatData.push({
         date: timestamp.toISOString().split('T')[0],
-        temperature: temperature.toFixed(2),
-        heatUsedForPower: heatUsedForPower.toFixed(2),
-        heatTransformedToAC: heatTransformedToAC.toFixed(2),
+        temperature: temperature.toFixed(1),
+        heatUsedForPower: heatUsedForPower.toFixed(0),
+        heatTransformedToAC: heatTransformedToAC.toFixed(0),
       });
     }
   
@@ -32,9 +43,9 @@ const generateHeatData = () => {
   
     heatData.push({
       date: timestamp,
-      temperature: temperature.toFixed(2),
-      heatUsedForPower: heatUsedForPower.toFixed(2),
-      heatTransformedToAC: heatTransformedToAC.toFixed(2),
+      temperature: temperature.toFixed(1),
+      heatUsedForPower: heatUsedForPower.toFixed(0),
+      heatTransformedToAC: heatTransformedToAC.toFixed(0),
     });
   
     if (heatData.length > 1000) {
