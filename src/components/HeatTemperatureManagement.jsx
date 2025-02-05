@@ -142,10 +142,10 @@ const HeatTemperatureManagement = () => {
             </div>
           </div>
 
-          <div className="mt-8 bg-white shadow-md rounded-lg p-6">
+          {/* <div className="mt-8 bg-white shadow-md rounded-lg p-6">
             <h4 className="text-2xl font-bold text-green-700 mb-4">Historical Data</h4>
             <Line data={historicalData} />
-          </div>
+          </div> */}
         </>
       )}
     </div>
