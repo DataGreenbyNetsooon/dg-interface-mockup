@@ -71,30 +71,42 @@ const Dashboard = () => {
                 </div>
               </div>
             );
-          })}
-        </div>
-      </div>
+            })}
+          </div>
+          </div>
 
-      {/* Quick Actions */}
-      <div className="mt-8">
-        <h3 className="text-2xl font-semibold text-green-700">Quick Actions</h3>
-        <div className="mt-4 space-x-4">
-          <Link
+          {/* Quick Actions */}
+          <div className="mt-8">
+          <h3 className="text-2xl font-semibold text-green-700">Quick Actions</h3>
+          <div className="mt-4 space-x-4">
+            <Link
             to="/sensors"
             className="btn btn-primary rounded-lg px-4 py-2 bg-blue-500 text-white hover:bg-blue-600 transition duration-300"
-          >
+            >
             View Sensors
-          </Link>
-          <Link
+            </Link>
+            <Link
             to="/logs"
             className="btn btn-secondary rounded-lg px-4 py-2 bg-gray-500 text-white hover:bg-gray-600 transition duration-300"
-          >
+            >
             View Logs
-          </Link>
-        </div>
-      </div>
+            </Link>
+            <Link
+            to="/anomalies"
+            className="btn btn-warning rounded-lg px-4 py-2 bg-yellow-500 text-white hover:bg-yellow-600 transition duration-300"
+            >
+            View Anomalies
+            </Link>
+            <Link
+            to="/trends"
+            className="btn btn-success rounded-lg px-4 py-2 bg-green-500 text-white hover:bg-green-600 transition duration-300"
+            >
+            Check on Trends
+            </Link>
+            </div>
+          </div>
 
-      {/* Latest News Section */}
+          {/* Latest News Section */}
       <div className="mt-8">
         <h3 className="text-2xl font-semibold text-green-700">Latest News</h3>
         <div className="mt-4">

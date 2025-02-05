@@ -118,13 +118,13 @@ const HeatTemperatureManagement = () => {
                         <div className="bg-white shadow-md rounded-lg p-6 text-center col-span-1 md:col-span-3 lg:grid-cols-3">
                             <div className="flex justify-center items-center mb-4">
                                 <FaDollarSign className="text-4xl text-green-500" />
-                                <h4 className="text-2xl font-bold text-green-700 ml-2">Earnings per hour</h4>
+                                <h4 className="text-2xl font-bold text-green-700 ml-2">Savings per hour</h4>
                             </div>
                             <p className="text-4xl font-bold text-green-700">
                                 ${calculateEarnings(latestData.heatUsedForPower)}
                             </p>
                             <p className="text-gray-600 mt-2">
-                                Earnings from using the heat recycling system.
+                                Saved from using the heat recycling system.
                             </p>
                         </div>
                     </div>
