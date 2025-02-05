@@ -8,6 +8,7 @@ import SensorDetails from "./components/SensorDetails";
 import Logs from "./components/Logs";
 import Trends from "./components/Trends";
 import Anomalies from "./components/Anomalies";
+import HeatTemperatureManagement from "./components/HeatTemperatureManagement";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
               <Route path="/" element={<Dashboard />} />
               <Route path="/sensors" element={<Sensors />} />
               <Route path="/sensor/:type" element={<SensorDetails />} />
+              <Route path="/heat-temperature-management" element={<HeatTemperatureManagement />} />
               <Route path="/trends" element={<Trends />} />
               <Route path="/anomalies" element={<Anomalies />} />
               <Route path="/logs" element={<Logs />} />
