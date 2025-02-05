@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars, FaTachometerAlt, FaThermometerHalf, FaClipboardList, FaChartLine, FaExclamationTriangle } from "react-icons/fa";
+import { FaBars, FaTachometerAlt, FaThermometerHalf, FaClipboardList, FaChartLine, FaExclamationTriangle, FaFire } from "react-icons/fa";
 
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -22,6 +22,12 @@ const Sidebar = () => {
           <Link to="/" className="flex items-center hover:text-green-300 text-2xl">
             <FaTachometerAlt size={28} className="mr-2" />
             <span className={`${isCollapsed ? 'hidden' : 'block'}`}>Dashboard</span>
+          </Link>
+        </li>
+        <li>
+          <Link to="/heat-temperature-management" className="flex items-center hover:text-green-300 text-2xl">
+            <FaFire size={28} className="mr-2" />
+            <span className={`${isCollapsed ? 'hidden' : 'block'}`}>Heat</span>
           </Link>
         </li>
         <li>
