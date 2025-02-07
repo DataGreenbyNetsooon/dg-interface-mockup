@@ -10,7 +10,7 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className={`h-full bg-gray-800 text-white p-6 shadow-md flex flex-col transition-all duration-300 ${isCollapsed ? 'w-20' : 'w-56'}`}>
+    <aside className={`bg-gray-800 text-white p-6 shadow-md flex flex-col transition-all duration-300 ${isCollapsed ? 'w-20' : 'w-56'}`}>
       <div className="flex mb-8">
         <button onClick={toggleSidebar} className="items-center justify-center justify-center hover:text-green-300 text-white text-2xl font-bold">
           <FaBars />
