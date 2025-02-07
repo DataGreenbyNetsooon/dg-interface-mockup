@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { mockHeatData } from "../data/mockHeatData";
+import { mockHeatData } from "../../data/monitoring/mockHeatData";
 import { FaThermometerHalf, FaBolt, FaSnowflake, FaDollarSign, FaExclamationTriangle, FaLeaf } from "react-icons/fa";
 import { Line } from "react-chartjs-2";
 

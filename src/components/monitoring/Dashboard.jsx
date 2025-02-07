@@ -1,6 +1,6 @@
 import React from "react";
-import News from "../data/mockNews";
-import { mockDashSensors } from "../data/mockDashSensors";
+import News from "../../data/monitoring/mockNews";
+import { mockDashSensors } from "../../data/monitoring/mockDashSensors";
 import { Link } from "react-router-dom";
 
 const Dashboard = () => {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { sensorData } from "../data/mockSensors";
+import { sensorData } from "../../data/monitoring/mockSensors";
 import { Link } from "react-router-dom";
 
 const Sensors = () => {

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { mockDashSensors } from "../data/mockDashSensors";
+import { mockDashSensors } from "../../data/monitoring/mockDashSensors";
 
 const Anomalies = () => {
   const anomalies = mockDashSensors.filter(sensor => sensor.status === "Warning" || sensor.status === "Critical");

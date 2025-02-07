@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Sidebar from "./components/Sidebar";
-import Footer from "./components/Footer";
-import Dashboard from "./components/Dashboard";
-import Sensors from "./components/Sensors";
-import SensorDetails from "./components/SensorDetails";
-import Logs from "./components/Logs";
-import Trends from "./components/Trends";
-import Anomalies from "./components/Anomalies";
-import HeatTemperatureManagement from "./components/HeatTemperatureManagement";
+import Navbar from "./components/monitoring/Navbar";
+import Sidebar from "./components/monitoring/Sidebar";
+import Footer from "./components/monitoring/Footer";
+import Dashboard from "./components/monitoring/Dashboard";
+import Sensors from "./components/monitoring/Sensors";
+import SensorDetails from "./components/monitoring/SensorDetails";
+import Logs from "./components/monitoring/Logs";
+import Trends from "./components/monitoring/Trends";
+import Anomalies from "./components/monitoring/Anomalies";
+import HeatTemperatureManagement from "./components/monitoring/HeatTemperatureManagement";
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
           <Sidebar />
           <main className="flex-1 bg-gray-50">
             <Routes>
-              <Route path="/" element={<Dashboard />} />
+              <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/sensors" element={<Sensors />} />
               <Route path="/sensor/:type" element={<SensorDetails />} />
               <Route path="/heat-temperature-management" element={<HeatTemperatureManagement />} />

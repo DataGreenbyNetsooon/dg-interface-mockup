@@ -1,5 +1,5 @@
 import React from 'react';
-import { mockDashSensors } from '../data/mockDashSensors';
+import { mockDashSensors } from '../../data/monitoring/mockDashSensors';
 import { FaClock, FaCalendarDay, FaBolt, FaCheckCircle, FaChartLine, FaExclamationTriangle } from 'react-icons/fa';
 
 const Trends = () => {

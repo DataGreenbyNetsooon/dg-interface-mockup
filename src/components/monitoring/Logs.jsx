@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { logs } from "../data/mockLogs";
+import { logs } from "../../data/monitoring/mockLogs";
 
 const Logs = () => {
   const [expandedLogId, setExpandedLogId] = useState(null);

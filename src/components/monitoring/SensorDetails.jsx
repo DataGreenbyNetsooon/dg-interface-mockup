@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { sensorData } from "../data/mockSensors";
+import { sensorData } from "../../data/monitoring/mockSensors";
 import { Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,

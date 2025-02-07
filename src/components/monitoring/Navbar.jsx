@@ -10,9 +10,8 @@ const Navbar = () => {
           <h1 className="text-3xl font-bold">DataGreen</h1>
         </div>
         <div className="space-x-8 text-2xl font-semibold">
-          <a href="/" className="hover:text-green-300">Home</a>
-          <a href="/sensors" className="hover:text-green-300">Sensors</a>
-          <a href="/logs" className="hover:text-green-300">Logs</a>
+          <a href="/dashboard" className="hover:text-green-300">Telemetry & Monitoring</a>
+          <a href="/ai-empowered-solutions" className='hover:text-green-300'>AI Agents</a>
         </div>
       </div>
     </nav>

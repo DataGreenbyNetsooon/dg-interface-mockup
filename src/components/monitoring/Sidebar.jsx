@@ -19,7 +19,7 @@ const Sidebar = () => {
       </div>
       <ul className="space-y-8 flex-1">
         <li>
-          <Link to="/" className="flex items-center hover:text-green-300 text-2xl">
+          <Link to="/dashboard" className="flex items-center hover:text-green-300 text-2xl">
             <FaTachometerAlt size={28} className="mr-2" />
             <span className={`${isCollapsed ? 'hidden' : 'block'}`}>Dashboard</span>
           </Link>
