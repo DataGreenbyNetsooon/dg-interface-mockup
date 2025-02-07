@@ -15,12 +15,13 @@ import HeatTemperatureManagement from "./components/monitoring/HeatTemperatureMa
 
 // ml components
 import LandingPage from "./components/ml/LandingPage";
+import NotebookViewer from "./components/ml/NotebookViewer";
 
 // -----------------------------------------------
 
   const MainLayout = () => {
     const location = useLocation();
-    const hideSidebar = location.pathname === '/ai-empowered-solutions';
+    const hideSidebar = location.pathname === '/ai-empowered-solutions' || location.pathname.includes('/notebook');
   
     return (
       <div className="flex flex-col min-h-screen">
@@ -39,6 +40,10 @@ import LandingPage from "./components/ml/LandingPage";
               <Route path="/logs" element={<Logs />} />
               {/* AI Agents section */}
               <Route path="/ai-empowered-solutions" element={<LandingPage />} />
+              {/* Notebook Viewer */}
+              <Route path="/notebook/breast-cancer" element={<NotebookViewer notebookPath="/notebooks/breast-cancer.html" />} />
+              <Route path="/notebook/ship-detection" element={<NotebookViewer notebookPath="/notebooks/ship-detection-using-faster-r-cnn-part-2.html" />} />
+              <Route path="/notebook/music-recommendation" element={<NotebookViewer notebookPath="/notebooks/music-recommendation-system-using-spotify-dataset.html" />} />
             </Routes>
           </main>
         </div>

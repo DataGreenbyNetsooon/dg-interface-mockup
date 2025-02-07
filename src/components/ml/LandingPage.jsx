@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChartLine, faDatabase, faBook, faTasks } from '@fortawesome/free-solid-svg-icons';
 
@@ -17,7 +18,7 @@ const LandingPage = () => {
           <p className="text-gray-300">Welcome to the AI Agents Dashboard. Here you can find insights and performance metrics of our AI models and agents.</p>
         </section>
         
-        {/* Key Metrics Section */}
+        {/* Key Metrics Section
         <section className="mb-16">
           <h2 className="text-4xl font-semibold mb-5 flex items-center">
             <FontAwesomeIcon icon={faTasks} className="mr-3 text-green-400" />
@@ -37,27 +38,27 @@ const LandingPage = () => {
               <p className="text-red-400 text-5xl">90%</p>
             </div>
           </div>
-        </section>
+        </section> */}
         
-        {/* Data Sets Section */}
+        {/* Use Cases Section */}
         <section className="mb-16">
           <h2 className="text-4xl font-semibold mb-5 flex items-center">
-            <FontAwesomeIcon icon={faDatabase} className="mr-3 text-green-400" />
-            Data Sets
+            <FontAwesomeIcon icon={faTasks} className="mr-3 text-green-400" />
+            Use Cases
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-gray-800 p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-3xl font-semibold mb-4">Data Set 1</h3>
-              <p className="text-gray-300">Summary of data set 1...</p>
-            </div>
-            <div className="bg-gray-800 p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-3xl font-semibold mb-4">Data Set 2</h3>
-              <p className="text-gray-300">Summary of data set 2...</p>
-            </div>
-            <div className="bg-gray-800 p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow">
-              <h3 className="text-3xl font-semibold mb-4">Data Set 3</h3>
-              <p className="text-gray-300">Summary of data set 3...</p>
-            </div>
+            <Link to="/notebook/ship-detection" className="bg-gray-800 p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow">
+              <h3 className="text-3xl font-semibold mb-4">Ship Detection</h3>
+              <p className="text-gray-300">Using Faster R-CNN</p>
+            </Link>
+            <Link to="/notebook/music-recommendation" className="bg-gray-800 p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow">
+              <h3 className="text-3xl font-semibold mb-4">Music Recommendation</h3>
+              <p className="text-gray-300">Using Spotify Dataset</p>
+            </Link>
+            <Link to="/notebook/breast-cancer" className="bg-gray-800 p-6 shadow-lg rounded-lg hover:shadow-xl transition-shadow">
+              <h3 className="text-3xl font-semibold mb-4">Breast Cancer Detection</h3>
+              <p className="text-gray-300">Using Deep Learning</p>
+            </Link>
           </div>
         </section>
         
